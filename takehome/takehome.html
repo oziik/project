@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BADMINTON SCOREBOARD</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(37, 35, 35);
+            color: aliceblue;
+            text-align: center;
+            font-family: sans-serif;
+        }
+        h1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 40px;
+        }
+        header{
+            /* border: 2px solid white; */
+            border-bottom: 5px solid green;
+            width: 90%;
+            padding: 1em;
+            margin: auto;
+            margin-top: 1.5em;
+        }
+        .container{
+            max-width: 100%;
+            width: 1000px;
+            /* border: 3px solid #fff; */
+            display: flex;
+            margin: auto;
+            margin-top: 0.5em;
+            padding: 1em;
+        }
+        .pemain1, .pemain2{
+            width: 100%;
+            border: 3px solid whitesmoke;
+            border-radius: 1em;
+            padding: 2em 3em;
+            font: bold;
+            margin: 1em;
+    
+        }
+        h2{
+            font-size: 4rem;
+        }
+        .pemain1-skor , .pemain2-skor{
+            width: 50%;
+            /* border: 2px solid white; */
+            margin: auto;
+            padding: 1em;
+        }
+        .skor{
+            background-color: green;
+            border-radius: 0.4em;
+            padding: 0.5em 0;
+        }
+        .poin{
+            border: 2px solid white;
+            background-color: rgb(0, 0, 0);
+            cursor: pointer;
+            margin: 1em;
+            padding: 1em 1em;
+            border-radius: 0.4em;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        .akhir{
+            margin-top: 0.4em;
+            padding: 2em;
+        }
+        .btn{
+            cursor: pointer;
+            padding: 1em 2em;
+            font-size: 20px;
+            margin: 20px;
+            border-radius: 20px;
+            background-color: rgb(2, 107, 2);
+            font-weight: bold;
+        }
+        .info{
+            margin-top: 2em;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .winner{
+            background-color: gold;
+        }
+        .draw {
+            background-color: blueviolet;
+        }
+
+
+
+
+        
+    </style>
+</head>
+<body>
+    <!-- nama board -->
+    <header>
+    <div>
+        <h1>BADMINTON SCOREBOARD</h1>
+      </div>
+    </header>
+      <!-- end nama board -->
+
+      <!-- papan nama -->
+    <div class="container"> 
+
+      <div class="pemain1 pemain1-bg">
+        <h1>L CHONG WEI</h1>
+        <div class="pemain1-skor">
+            <h2 class="skor skor1">0</h2>
+        </div>
+        <input class="poin btn1 btn-home" type="button" value="POIN">
+      </div>
+
+      <div class="pemain2 pemain2-bg">
+        <h1>LIN DAN</h1>
+        <div class="pemain2-skor">
+            <h2 class="skor skor2">0</h2>
+        </div>
+        <input class="poin btn2 btn-away" type="button" value="POIN">
+      </div>
+
+    </div>
+        <!-- end div container -->
+        <!-- end papan nama -->
+        <p class="info"></p>
+    <div class="akhir">
+        <input class="newgame btn" type="button" value="NEW GAME">
+        <input class="endgame btn" type="button" value="END GAME">
+    </div>
+
+    <script src="coba.js"></script>
+</body>
+</html>
